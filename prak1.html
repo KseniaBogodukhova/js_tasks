@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Уровень 1
+
+        let age = +prompt("Сколько вам лет?");
+        let name = prompt("Как вас зовут?");
+        let lastName = prompt("Какая у вас фамилия?");
+        alert(`Привет ${name} ${lastName} ! Тебе ${age} лет.`);
+
+        // Уровень 2
+
+        let num = +prompt("Введите число");
+        if (num % 2 === 0) {
+            alert("Число четное");
+        } else if (num % 2 === 1) {
+        alert("Это число нечетное");
+        } else {
+            alert("Это не число");
+        }
+
+        // Уровень 3
+
+        let name1 = prompt("Как вас зовут?");
+        let age1 = +prompt("Cколько вам лет?");
+        if (age1 >= 18 && age1 < 65) {
+             alert(`Привет, ${name1}! Ты взрослый человек, заходи`);
+        } 
+        else if (age1 >= 65) {
+            alert(`Приыет, ${name1}! Для возрастных лиц у нас скидки`);
+        } 
+        else {
+            alert(`Привет, ${name1}! Ты еще школьник`);
+        } 
+    </script>
+    
+</body>
+</html>
