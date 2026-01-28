@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1
+        const n = +prompt("Введите число");
+        if ( n === 0 ) {
+            alert("Это ноль");
+        } else if ( n > 0) {
+            alert("Число положительное");
+        } else {
+            alert("Число отрицательное")
+        }
+
+        //2
+        const s = +prompt("Введите число или слолво")
+        if (Number.isNaN(s)) {
+            alert("это не число");
+        } else {
+            if (s > 100) {
+                alert("число больше 100");
+            } else if (s < 100) {
+                alert("Число меньше 100");
+            } else {
+                alert("равно 100")
+            }
+        }
+
+        //3
+        const one = +prompt("Введите число");
+        const two = +prompt("Введите число");
+        const tree = +prompt("Введите число");
+        const result = Math.max(one, two, tree);
+        alert(`${result} наибольшее число`);
+
+    </script>
+</body>
+</html>
