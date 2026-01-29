@@ -5,10 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script>
+        const myName = "Ксения";
+        const programmingLanguage = "JavaScript";
+        const courseCreatorName = "Никиты Михайловича";
+        const reasonText = "Желание создавать полезные, видимые и востребованные цифровые продукты, соединяя творчество с логикой, и иметь востребованную профессию с возможностью работать из любой точки мира." ;
+        const numberOfMouth = "1 месяц";
+        alert(`Всем привет! Меня зовут ${myName}. Сейчас я изучаю язык программирования
+            ${programmingLanguage} на курсе по ${programmingLanguage} у ${courseCreatorName}.
+            Я хочу стать веб-разработчиком, потому что ${reasonText}. До этого я изучалa
+            ${programmingLanguage} ${numberOfMouth} месяцев. Я уверена, что пройду данный курс до конца!`);
+
+        let myinfoText = `Всем привет! Меня зовут ${myName}. Сейчас я изучаю язык программирования
+            ${programmingLanguage} на курсе по ${programmingLanguage} у ${courseCreatorName}.
+            Я хочу стать веб-разработчиком, потому что ${reasonText}. До этого я изучалa
+            ${programmingLanguage} ${numberOfMouth} месяцев. Я уверена, что пройду данный курс до конца!`;
+        myinfoText = myinfoText.replaceAll('JavaScript', 'JAVASCRIPT');
+        alert(myinfoText);
+        alert(myinfoText.length);
+        console.log(myinfoText[0], myinfoText[myinfoText.length - 1]);
+
+        const userName = prompt('Ваше имя?').trim().toLowerCase();
+        alert(`Вас зовут ${userName}`);
+        const userAge = +prompt(`Cколько лет тебе ${userName}`).trim();
+        alert(`Вас зовут ${userName} и вам ${userAge} лет`);
+
+        const userString = prompt("Введите текст для обрезки").trim();
+        const startSliceIndex = +prompt("Введите индекс который начнет обрезку").trim();
+        const endSliceIndex = +prompt("Введите индекс который завершит обрезку").trim();
+        alert(userString.slice(startSliceIndex, endSliceIndex));
+
+        const userText = prompt("Текст введи пес").trim();
+        const wordFromText = prompt("Слово которое нужно найти в тексте").trim();
+        const indexOfWord = userText.indexOf(wordFromText);
+        alert(userText.slice(0, indexOfWord))
+
         
     </script>
 </head>
 <body>
-    
+    <script>
+        ''.indexOf("")
+        
+    </script>
 </body>
 </html>
