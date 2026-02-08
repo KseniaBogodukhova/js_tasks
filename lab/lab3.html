@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const getName = name => `Имя = ${name}`
+
+        const getName1 = function (name) {
+            return `Имя = ${name}`
+        }
+
+        function getName3(name) {
+            return `Имя = ${name}`
+        }
+
+        alert(getName('Ксения'))
+        alert(getName1('Ксения'))
+        alert(getName3('Ксения'))
+
+        const getSumOfNumbers = (number, type = "odd") => {
+            let sum = 0;
+            for (i=1; i <= number; i++) {
+                if (type === "" ||
+                (type === "odd" && i % 2 !== 0) || 
+                (type === "even" && i % 2 === 0)) {
+                    sum += i
+                }
+            }
+            return sum
+        }
+        console.log(getSumOfNumbers(10, 'odd'));
+        console.log(getSumOfNumbers(10, 'even'));
+        console.log(getSumOfNumbers(10));
+
+        const getDivisorsCount = (number = 1) => {
+                let count = 0
+            if (number < 0 || Number.isInteger(number) === false) {
+                alert('number должен быть целым числом и больше нуля')
+                return;
+            } else {
+                for (i = 1; i <= number; i++) {
+                    if (number % i === 0) {
+                        count ++
+                } 
+            }
+        }
+            return count
+        }
+
+        alert(getDivisorsCount(4))
+        alert(getDivisorsCount(5))
+        alert(getDivisorsCount(12))
+
+        
+
+
+    </script>
+</body>
+</html>
