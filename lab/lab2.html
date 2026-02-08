@@ -7,111 +7,191 @@
 </head>
 <body>
     <script>
-        const existedUserPassword = 12345678;
-        const exitedUserLogin = "velvell";
-        const UserPassword = +prompt("Введите пароль").trim();
-        const UserLogin = prompt("login").trim();
-        if (UserPassword===existedUserPassword && UserLogin===exitedUserLogin) {
-            alert(`hi ${UserLogin}`)
-        } else {
-            alert(`логин или пароль введены не правильно`)
-        }
+        // const existedUserPassword = 12345678;
+        // const exitedUserLogin = "velvell";
+        // const UserPassword = +prompt("Введите пароль").trim();
+        // const UserLogin = prompt("login").trim();
+        // if (UserPassword===existedUserPassword && UserLogin===exitedUserLogin) {
+        //     alert(`hi ${UserLogin}`)
+        // } else {
+        //     alert(`логин или пароль введены не правильно`)
+        // }
 
 
-        let correctAnswers = 0
-        let incorrectAnswers = 0
+        // let correctAnswers = 0
+        // let incorrectAnswers = 0
 
-        const one = +prompt("2+2");
-        if (one === 4) {
-            alert('Ответ верный');
-            correctAnswers++
-        } else {
-            alert('Ответ неверный');
-            incorrectAnswers++
-        }
+        // const one = +prompt("2+2");
+        // if (one === 4) {
+        //     alert('Ответ верный');
+        //     correctAnswers++
+        // } else {
+        //     alert('Ответ неверный');
+        //     incorrectAnswers++
+        // }
 
-        const two = +prompt("2*2");
-        if (two === 4) {
-            alert('Ответ верный')
-            correctAnswers++
-        } else {
-            alert('Отыет неверный')
-            incorrectAnswers++
-        }
+        // const two = +prompt("2*2");
+        // if (two === 4) {
+        //     alert('Ответ верный')
+        //     correctAnswers++
+        // } else {
+        //     alert('Отыет неверный')
+        //     incorrectAnswers++
+        // }
 
-        const three = +prompt("У пети было 5я, 3я сьел, 1 отдал, скока осталось?");
-        if (three === 1) {
-            alert('Отыет верный');
-            correctAnswers++
-        } else {
-            alert('Ответ неверный');
-            incorrectAnswers++
-        }
+        // const three = +prompt("У пети было 5я, 3я сьел, 1 отдал, скока осталось?");
+        // if (three === 1) {
+        //     alert('Отыет верный');
+        //     correctAnswers++
+        // } else {
+        //     alert('Ответ неверный');
+        //     incorrectAnswers++
+        // }
 
-        const four = +prompt("У маши 10к, 2к ноу, 1к ноу. Мамадаст 5к. в итоге скока к?");
-        if (four === 12) {
-            alert('Ответ верный');
-             correctAnswers++
-        } else {
-             alert('Отыет неверный');
-             incorrectAnswers++
-        }
+        // const four = +prompt("У маши 10к, 2к ноу, 1к ноу. Мамадаст 5к. в итоге скока к?");
+        // if (four === 12) {
+        //     alert('Ответ верный');
+        //      correctAnswers++
+        // } else {
+        //      alert('Отыет неверный');
+        //      incorrectAnswers++
+        // }
 
-        const five =+prompt("2+2*2");
-        if (five === 6) {
-             alert('Отыет верный');
-             correctAnswers++
-        } else {
-            alert('Отыет неверный')
-            incorrectAnswers++
-        }
+        // const five =+prompt("2+2*2");
+        // if (five === 6) {
+        //      alert('Отыет верный');
+        //      correctAnswers++
+        // } else {
+        //     alert('Отыет неверный')
+        //     incorrectAnswers++
+        // }
 
-        alert(`Конец теста! Правильно: ${correctAnswers}, неправильно: ${incorrectAnswers}`)
+        // alert(`Конец теста! Правильно: ${correctAnswers}, неправильно: ${incorrectAnswers}`)
 
         
-        if (confirm('JavaScript появился в 1995 году?')) {
-            alert('правильно')
-        } else {
-            alert("JavaScript действительно появился в 1995 году. Он был разработан Бренданом Эйхом (Brendan Eich) всего за 10 дней в компании Netscape для браузера Netscape Navigator 2.0. Изначально язык назывался Mocha, затем был переименован в LiveScript, и только потом получил свое итоговое название JavaScript")
-        }
+        // if (confirm('JavaScript появился в 1995 году?')) {
+        //     alert('правильно')
+        // } else {
+        //     alert("JavaScript действительно появился в 1995 году. Он был разработан Бренданом Эйхом (Brendan Eich) всего за 10 дней в компании Netscape для браузера Netscape Navigator 2.0. Изначально язык назывался Mocha, затем был переименован в LiveScript, и только потом получил свое итоговое название JavaScript")
+        // }
 
-        if (confirm('JavaScript был создан за месяц?')) {
-            alert('неверно')
-        } else {
-            alert('JavaScript был создан всего за 10 дней в мае 1995 года. Брендан Эйх разработал первую версию языка (тогда называвшуюся Mocha, затем LiveScript) для браузера Netscape Navigator 2.0. Несмотря на рекордно короткие сроки разработки, язык стал стандартом для веб-интерактивности. ')
-        }
+        // if (confirm('JavaScript был создан за месяц?')) {
+        //     alert('неверно')
+        // } else {
+        //     alert('JavaScript был создан всего за 10 дней в мае 1995 года. Брендан Эйх разработал первую версию языка (тогда называвшуюся Mocha, затем LiveScript) для браузера Netscape Navigator 2.0. Несмотря на рекордно короткие сроки разработки, язык стал стандартом для веб-интерактивности. ')
+        // }
 
-        if(confirm('Спецификация JavaScript называется ECMAScript?')) {
-            alert('правильно')
-        } else {
-            alert('спецификация языка JavaScript называется ECMAScript (сокращенно ES). Это стандарт, описывающий правила, синтаксис, типы данных и встроенные объекты, на котором основан JavaScript. Развитием стандарта занимается организация Ecma International (стандарт ECMA-262), а язык называют так из-за товарного знака JavaScript, принадлежащего Oracle')
-        }
+        // if(confirm('Спецификация JavaScript называется ECMAScript?')) {
+        //     alert('правильно')
+        // } else {
+        //     alert('спецификация языка JavaScript называется ECMAScript (сокращенно ES). Это стандарт, описывающий правила, синтаксис, типы данных и встроенные объекты, на котором основан JavaScript. Развитием стандарта занимается организация Ecma International (стандарт ECMA-262), а язык называют так из-за товарного знака JavaScript, принадлежащего Oracle')
+        // }
 
-        let i = 0
-        while (i < 3) {
-            const newStudent = prompt('Введите имя нового студента').trim();
-            if (newStudent) {
-                alert(`Добро пожаловать, ${newStudent}!`);
-            }
-            i++;
-        } 
+        // let i = 0
+        // while (i < 3) {
+        //     const newStudent = prompt('Введите имя нового студента').trim();
+        //     if (newStudent) {
+        //         alert(`Добро пожаловать, ${newStudent}!`);
+        //     }
+        //     i++;
+        // } 
 
-        let j = 0
-        do {
-            const newStudent = prompt('Введите имя нового студента').trim();
-            if (newStudent) {
-                alert(`Добро пожаловать, ${newStudent}!`);
-            }
-            j++;
-        } while (j < 3);
+        // let j = 0
+        // do {
+        //     const newStudent = prompt('Введите имя нового студента').trim();
+        //     if (newStudent) {
+        //         alert(`Добро пожаловать, ${newStudent}!`);
+        //     }
+        //     j++;
+        // } while (j < 3);
 
-        let sum = 0
-        for (let i = 0; i <= 100; i++) {
-            sum = sum + i
-        }
-        console.log(sum);
-       
+        // let sum = 0
+        // for (let i = 0; i <= 100; i++) {
+        //     sum = sum + i
+        // }
+        // console.log(sum);
         
+        // let discount = 0;
+        // const clientName = 'Игорь';
+        // let clientSpentForAllTime = 110;
+        // const clientSpentToday = 25;
+        // let itogsum = 0;
+
+        // if (clientSpentForAllTime > 100 && clientSpentForAllTime <= 300) {
+        //     console.log('скидка 10%');
+        //     discount = 0.1;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // } else if (clientSpentForAllTime > 300 && clientSpentForAllTime <= 500){
+        //     console.log('20%')
+        //     discount = 0.2;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // } else {
+        //     console.log('30%')
+        //     discount = 0.3;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // }
+        // alert(`Приветствую, ${clientName}, вы заплатите сегодня ${clientSpentToday}, а всего ${clientSpentForAllTime}, ваша скидка ${discount*100}%, с учетом скидки ${itogsum}`)
+        
+        // let discount = 0;
+        // const clientName = 'Игорь';
+        // let clientSpentForAllTime = 110;
+        // const clientSpentToday = 25;
+        // let itogsum = 0;
+
+        // if (clientSpentForAllTime > 100 && clientSpentForAllTime <= 300) {
+        //     console.log('скидка 10%');
+        //     discount = 0.1;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // } else if (clientSpentForAllTime > 300 && clientSpentForAllTime <= 500){
+        //     console.log('20%')
+        //     discount = 0.2;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // } else {
+        //     console.log('30%')
+        //     discount = 0.3;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // }
+        // alert(`Приветствую, ${clientName}, вы заплатите сегодня ${clientSpentToday}, а всего ${clientSpentForAllTime}, ваша скидка ${discount*100}%, с учетом скидки ${itogsum}`)
+        
+        // let discount = 0;
+        // const clientName = prompt('name?').trim();
+        // let clientSpentForAllTime = +prompt('Сколько платил всего').trim();
+        // const clientSpentToday = +prompt('Сколько заплатил сегодня?').trim();
+        // let itogsum = 0;
+
+        // if (clientSpentForAllTime > 100 && clientSpentForAllTime <= 300) {
+        //     console.log('скидка 10%');
+        //     discount = 0.1;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // } else if (clientSpentForAllTime > 300 && clientSpentForAllTime <= 500){
+        //     console.log('20%')
+        //     discount = 0.2;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // } else {
+        //     console.log('30%')
+        //     discount = 0.3;
+        //     itogsum = clientSpentToday - clientSpentToday * discount;
+        // }
+
+        // if (!isNaN(clientSpentForAllTime) || !isNaN(clientSpentToday)) {
+        //     alert(`Приветствую, ${clientName}, вы заплатите сегодня ${clientSpentToday}, а всего ${clientSpentForAllTime}, ваша скидка ${discount*100}%, с учетом скидки ${itogsum}`);
+        // } else {
+        //     alert('вы вввели не число');
+        // }
+        
+        const password = prompt('Введите пароль').trim()
+        let Validlenght = password.length  >= 3  && password.length <= 20;
+        let ValidBukv = /[a-z]/.test(password);
+        let ValidmaxBukv = /[A-Z]/.test(password);
+        let ValidNumber = /[0-9]/.test(password);
+        let ValidSimvols = /[!@#$%^&*()/|?><-_+=]/.test(password);
+        if (Validlenght && ValidBukv && ValidmaxBukv && ValidNumber && ValidSimvols) {
+            alert('Пароль валидный, добро пожаловать в акаунт');
+        } else {
+            alert('пароль не удовлетворяет требования')
+        }
+
+
 
 
     </script>
