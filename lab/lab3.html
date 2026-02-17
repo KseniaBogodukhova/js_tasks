@@ -38,7 +38,7 @@
 
         const getDivisorsCount = (number = 1) => {
                 let count = 0
-            if (number < 0 || Number.isInteger(number) === false) {
+            if (number < 0 || !Number.isInteger(number)) {
                 alert('number должен быть целым числом и больше нуля')
                 return;
             } else {
@@ -55,9 +55,35 @@
         alert(getDivisorsCount(5))
         alert(getDivisorsCount(12))
 
-        
+        const checkQuestionAnswer =  (question, correctAnswer) => {
+            const answer = prompt(question);
+            if (answer.toLowerCase() === correctAnswer.toLowerCase()) {
+                alert('Ответ верный')
+            } else {
+                alert('Ответ неверный')
+            }
+        }
+        checkQuestionAnswer('Какой язык программирования используется для веб-разработки?', 'JavaScript')
 
+        const showSuccessMessage = (message) => {
+            console.log('%c%s','color: green', `Успех! ${message}`);
+           
+        }
+        const showErrorMessage = (message) => {
+             console.log('%c%s', 'color: red', `Ошибка! ${message}`);
+        }
 
+        const checkTextOnErrorSymbol = (text, errorSymbol, succerssCallback, errorCallback) => {
+            if (text.includes(errorSymbol)) {
+                i = text.indexOf(errorSymbol)
+                errorCallback(`Текст содержит запрещенный символ: ${errorSymbol} под индексом ${i}`);
+            } else {
+                succerssCallback('Текст не содержит запрещенных символов');
+            }
+        }
+
+        const text = prompt('Введи текст для проверки')
+        checkTextOnErrorSymbol(text, 'б', showSuccessMessage, showErrorMessage)
     </script>
 </body>
 </html>
